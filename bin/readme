@@ -1,0 +1,28 @@
+In eclipse ist anders als Netbeans weil derby hier nicht von Haus uas drien ist.
+
+1
+Erstelle eigene lib File wie Folgendes:
+File > New > Folder > IN YOURPROJECTFILE AS lib
+
+2
+Derby.jar in lib verzeichnis koperen.
+
+WENN DU NICHT HAST:
+Herunterladen und von plugin verzeichnis kopieren,
+oder von Netbeand übernehmen, wenn du nich hast. 
+Erstelle ein verbindung mit Derby & Master Projekt.
+
+3
+Project Rechtsklick > Configure Build Path >  Build Path > Librares > Add externe JARs >
+VON lib VERZEICHNIS oder wo der sich befindet hinzufügen. Apply und Okay klicken.
+
+4
+CreateDB.java erstellen und starten
+
+WENN DU FEHLER MELDUNG HAST:
+Eclipse neu starten, dass eclipse Derby Treiber finden kann.
+
+5
+DAS HIER IST NUR EIN KLEIN BEISPIEL
+FÜR WEITERE SQL ANWEISUNGEN USW. ERWEITERN.
+HIER HAST DU TRAININGS https://www.youtube.com/channel/UCUvwlMMaeppKPdtAK8PxO8Q
