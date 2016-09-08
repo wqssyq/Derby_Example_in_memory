@@ -6,8 +6,7 @@ import java.sql.SQLException;
 
 public class CreateTable {
 
-	
-	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	public static void doCreateTable(){
         try {
         	
             Class.forName(CreateDB.DRIVER);
@@ -22,6 +21,10 @@ public class CreateTable {
             System.exit(0);
         }
         System.out.println("Database and Table Created with Values");
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		doCreateTable();
 	}
 	
 

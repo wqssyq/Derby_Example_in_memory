@@ -11,7 +11,7 @@ public class QueryDB {
 
 	public static final String SQL_STATEMENT = "SELECT * FROM tbl_users";
 	
-	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	public static void doQueryDB()throws ClassNotFoundException, SQLException{
 		
         Class.forName(CreateDB.DRIVER);
         Connection conn = DriverManager.getConnection(CreateDB.JDBC_URL);
@@ -35,6 +35,11 @@ public class QueryDB {
         stmt.close();
         conn.close();
         
-       System.out.println("Database and Table Crated with Values");
+       System.out.println("Database and Table Crated with Values");		
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		CreateTable.doCreateTable();
+		doQueryDB();
 	}
 }
